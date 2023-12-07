@@ -1,0 +1,192 @@
+.content1{
+    background-color: gray;
+}
+
+.content1 nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+
+.content1 nav a{
+    margin: 0 20px;
+}
+
+.logo{
+    color: blue;
+}
+
+.content2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content2a{
+    width: 40%;
+    padding: 2%;
+}
+
+.content2a button{
+    color: white;
+    background-color: green;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.content2b{
+    width: 40%;
+    padding: 2%;
+}
+
+.content2b img{
+    width: 90%;
+}
+
+/* ////////// */
+
+.content3{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content3a{
+    width: 40%;
+    padding: 2%;
+}
+
+.content3a img{
+    width: 90%;
+}
+
+.content3b{
+    width: 40%;
+    padding: 2%;
+}
+
+/* ////////// */
+
+#checkbox_toggle1{
+    display: none;
+}
+
+.hamburger1{
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+.list-menu1{
+    display: flex;
+}
+
+.list-menu1 li{
+    list-style: none;
+}
+
+.list-menu1 a{
+    text-decoration: none;
+}
+
+/* ////////// */
+
+footer{
+    background-color: gray;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sosmed0 li{
+    list-style: none;
+}
+
+.sosmed0 a{
+    text-decoration: none;
+}
+
+/* ////////// */
+
+@media(max-width:767px){
+    .logo{
+        margin: 25px;
+    }
+
+    #checkbox_toggle1{
+        display: none;
+    }
+    
+    .hamburger1{
+        display: block;
+    }
+
+    .list-menu1{
+        display: none;
+        position: absolute;
+        background-color: gray;
+        right: 0px;
+        left: 0px;
+        text-align: center;
+        padding: 16px 16px;
+        margin: 8px;
+    }
+
+    .list-menu1 li{
+        margin: 10px;
+    }
+
+    #checkbox_toggle1:checked ~ .list-menu1{
+        display: block;
+    }
+
+    /* ////////// */
+
+    .content2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content2a{
+        width: 100%;
+    }
+    .content2a h1, .content2a p, .content2a button{
+        margin-left: 10px;
+    }
+
+    .content2b{
+        width: 100%;
+    }
+    
+    .content2b img{
+        width: 90%;
+    }
+
+    /* ////////// */
+
+    .content3{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content3a{
+        width: 100%;
+    }
+    
+    .content3a img{
+        width: 90%;
+    }
+
+    .content3b{
+        width: 100%;
+    }
+    .content3b h1, .content3b p{
+        margin-left: 10px;
+    }    
+
+    /* ////////// */
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
